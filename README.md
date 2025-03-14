@@ -16,4 +16,17 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 ---
 
-## Structure du projet
+## Structure du projet par exeplaire:
+projet-multi-conteneurs/
+├── docker-compose.yml       # Fichier de configuration Docker Compose
+├── web/                     # Répertoire de l'application web
+│   ├── Dockerfile           # Fichier Docker pour l'application web
+│   ├── app/                 # Code source de l'application web
+│   └── requirements.txt     # Dépendances de l'application (si applicable)
+├── nginx/                   # Répertoire pour Nginx
+│   ├── Dockerfile           # Fichier Docker pour Nginx
+│   └── nginx.conf           # Configuration de Nginx
+├── db/                      # Répertoire pour la base de données
+│   └── Dockerfile           # Fichier Docker pour la base de données
+├── README.md                # Ce fichier
+└── .gitignore               # Fichier pour ignorer les fichiers inutiles dans Git
